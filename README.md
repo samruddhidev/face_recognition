@@ -1,29 +1,35 @@
-Facial Biometric Authentication System
+# Facial Biometric Authentication System
 
-A Python-based facial biometric authentication system that uses a live camera to detect, register, and authenticate users through facial recognition.
+A Python-based facial biometric authentication system that uses a **live camera** to detect, register, and authenticate users through facial recognition.
 
-📌 Overview
+## 📌 Overview
 
-This project implements a basic biometric authentication system using OpenCV and Python. A user can register their face using the webcam, after which the system stores the facial data and uses it to authenticate the user during subsequent camera sessions.
+This project implements a basic biometric authentication system using **OpenCV** and **Python**. A user can register their face using the webcam, after which the system stores the facial data and uses it to authenticate the user during subsequent camera sessions.
 
-The system can recognize registered users and reject unknown faces with an Authentication Failed message.
+The system can recognize registered users and reject unknown faces with an **Authentication Failed** message.
 
-✨ Features
-📷 Live webcam-based face detection
-👤 Face registration
-🔐 Real-time facial authentication
-✅ Authentication Successful for registered users
-❌ Authentication Failed for unknown users
-💾 Persistent storage of registered facial data
-🖥️ Simple graphical user interface
-🔄 Continuous live-camera authentication
-🛠️ Technologies Used
-Python 3.x
-OpenCV
-NumPy
-Tkinter
-Pillow
-📂 Project Structure
+## ✨ Features
+
+* 📷 Live webcam-based face detection
+* 👤 Face registration
+* 🔐 Real-time facial authentication
+* ✅ Authentication Successful for registered users
+* ❌ Authentication Failed for unknown users
+* 💾 Persistent storage of registered facial data
+* 🖥️ Simple graphical user interface
+* 🔄 Continuous live-camera authentication
+
+## 🛠️ Technologies Used
+
+* **Python 3.x**
+* **OpenCV**
+* **NumPy**
+* **Tkinter**
+* **Pillow**
+
+## 📂 Project Structure
+
+```text
 facial-biometric-authentication/
 │
 ├── app.py
@@ -31,41 +37,53 @@ facial-biometric-authentication/
 ├── trainer/
 ├── requirements.txt
 └── README.md
+```
 
 The folders used for storing registered facial data may be created automatically when the application is run.
 
-⚙️ Installation
+## ⚙️ Installation
 
 Clone the repository:
 
+```bash
 git clone https://github.com/your-username/facial-biometric-authentication.git
+```
 
 Go to the project directory:
 
+```bash
 cd facial-biometric-authentication
+```
 
 Install the required libraries:
 
+```bash
 pip install opencv-contrib-python numpy pillow
-▶️ Running the Project
+```
+
+## ▶️ Running the Project
 
 Run:
 
+```bash
 python app.py
+```
 
 The application will open the webcam and provide options to register a face and authenticate users.
 
-🔐 How It Works
-1. Register Face
+## 🔐 How It Works
 
-Click Register Face and enter the user's name.
+### 1. Register Face
+
+Click **Register Face** and enter the user's name.
 
 The webcam captures multiple images of the user's face and stores the facial information.
 
-2. Authentication
+### 2. Authentication
 
 After registration, the live camera continuously checks the detected face against the registered facial data.
 
+```text
 Live Camera
      ↓
 Face Detection
@@ -79,39 +97,47 @@ Compare with Registered Data
 Match          No Match
  ↓                ↓
 SUCCESS         FAILED
-3. Authentication Result
+```
+
+### 3. Authentication Result
 
 For a registered user:
 
+```text
 Authentication Successful
 User: Sam
+```
 
 For an unknown user:
 
+```text
 Authentication Failed
 Unknown User
-🎯 Objective
+```
 
-The objective of this project is to understand and implement the basic concepts of biometric authentication and facial recognition, including face detection, face registration, facial feature comparison, and authentication decisions.
+## 🎯 Objective
 
-🔮 Future Improvements
+The objective of this project is to understand and implement the basic concepts of **biometric authentication and facial recognition**, including face detection, face registration, facial feature comparison, and authentication decisions.
+
+## 🔮 Future Improvements
 
 The current version is the initial implementation. Future versions can include:
 
-Multi-user management
-Authentication history and logs
-Liveness detection
-Anti-spoofing
-Unknown-face snapshots
-Failed-attempt alerts
-Admin dashboard
-Database integration
-Additional AI-based face features
-⚠️ Disclaimer
+* Multi-user management
+* Authentication history and logs
+* Liveness detection
+* Anti-spoofing
+* Unknown-face snapshots
+* Failed-attempt alerts
+* Admin dashboard
+* Database integration
+* Additional AI-based face features
 
-This project is developed for educational purposes to demonstrate the working of facial biometric authentication. It should not be considered a production-ready security system.
+## ⚠️ Disclaimer
 
-👩‍💻 Author
+This project is developed for **educational purposes** to demonstrate the working of facial biometric authentication. It should not be considered a production-ready security system.
 
-Samruddhi Jain
+## 👩‍💻 Author
+
+**Samruddhi Jain**
 B.Tech – Artificial Intelligence & Data Science
